@@ -1,4 +1,4 @@
-body{
+body {
 	background-image: url(images/background.jpg);
 }
 
@@ -6,11 +6,11 @@ body{
 	border: 5px solid green;
 	background-color: white;
 	margin: 0 10%;
-
 }
 
 /* --- Intro --- */
 .header {
+	text-align: right;
 	border: 5px solid red;
 }
 
@@ -24,13 +24,32 @@ body{
 	background-color: #E8FBFB;
 	padding: 10px;
 	margin: 10px 0 0 0;
+	overflow: auto;
 }
 
 .article h2 {
 	display: inline;
 }
 
-.date {
+.article--date {
 	display: inline;
 	border: 5px solid purple;
+}
+
+/* --- Image floating to right --- */
+.article--spatula {
+	height: 130px;
+	width: 130px;
+	padding-top: 50px;
+	float: right;
+}
+
+.article--cookiemonster{
+	padding-top: 50px;
+	float: right;	
+}
+
+.article::after {
+	clear: both;
+	display: table;
 }
