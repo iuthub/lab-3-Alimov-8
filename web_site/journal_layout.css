@@ -1,5 +1,12 @@
-body {
+body{
+	background-image: url(images/background.jpg);
+}
+
+.container {
 	border: 5px solid green;
+	background-color: white;
+	margin: 0 10%;
+
 }
 
 /* --- Intro --- */
@@ -14,6 +21,9 @@ body {
 /* --- Article --- */
 .article {
 	border: 5px solid blue;
+	background-color: #E8FBFB;
+	padding: 10px;
+	margin: 10px 0 0 0;
 }
 
 .article h2 {
